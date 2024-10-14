@@ -34,12 +34,15 @@ export default function Home() {
     <>
       <Head>
         <title>DreamWise</title>
-        <meta property="og:site_name" content="DreamWise" />
+        <meta
+          property="og:site_name"
+          content="DreamWise, Study Abroad ExpertS"
+        />
       </Head>
       <main className="min-h-screen">
-        <NavBar 
-          scrollToFooter={scrollToFooter} 
-          scrollToHowToApply={scrollToHowToApply} 
+        <NavBar
+          scrollToFooter={scrollToFooter}
+          scrollToHowToApply={scrollToHowToApply}
           scrollToApplyFaster={scrollToApplyFaster}
         />
         <Hero />
@@ -48,10 +51,10 @@ export default function Home() {
           <HowToApply />
         </div>
         <div ref={ApplyFasterRef}>
-        <ApplyFaster />
+          <ApplyFaster />
         </div>
-        
-        <Footer ref={footerRef} /> 
+
+        <Footer ref={footerRef} />
       </main>
     </>
   );
